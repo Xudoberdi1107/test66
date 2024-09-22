@@ -1,0 +1,6 @@
+echo '🏗️👷 Styling, testing and building your project before pushing'
+
+npm run build || (
+    echo 'NX BUILD Failed. Run npm run build, add changes and try commit again.';
+    false;
+)

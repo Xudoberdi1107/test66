@@ -1,0 +1,11 @@
+npm run format
+# Check Prettier standards
+
+npm run check-format || (
+    echo '🤢🤮 Your styling looks disgusting. 🤢🤮
+    Prettier Check Failed. Run npm run format, add changes and try commit again.'
+    exit 1
+)
+
+# If everything passes... Now we can commit
+echo '✅✅✅✅ You win this time... I am committing this now. ✅✅✅✅' 
